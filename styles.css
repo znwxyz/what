@@ -5,7 +5,7 @@
   --muted: #5f5f5f;
   --line: #dcdcdc;
   --space: clamp(1rem, 2.4vw, 2.2rem);
-  --kv-key-w: 10rem;
+  --kv-key-w: 6rem;
   --pair-gap: calc(var(--s5) * 1.4);
   --s1: 0.25rem;
   --s2: 0.5rem;
@@ -262,7 +262,7 @@ main > .section:first-child {
   display: grid;
   grid-template-columns: var(--kv-key-w) 1fr;
   align-items: start;
-  column-gap: 0.55rem;
+  column-gap: 0.28rem;
   padding: var(--s1) 0;
 }
 
@@ -273,28 +273,28 @@ main > .section:first-child {
 
 .plan-block .kv-value {
   border-left: 1px solid #e5e5e5;
-  padding-left: 0.6rem;
+  padding-left: 0.35rem;
   min-height: 1.25rem;
 }
 
 .plan-block p.kv-cont {
-  margin: 0 0 var(--s1) calc(var(--kv-key-w) + 0.55rem);
-  padding-left: 0.6rem;
+  margin: 0 0 var(--s1) calc(var(--kv-key-w) + 0.28rem);
+  padding-left: 0.35rem;
   border-left: 1px solid #e5e5e5;
   line-height: 1.4;
 }
 
 .plan-block ul.kv-follow-list,
 .plan-block ol.kv-follow-list {
-  margin: 0 0 var(--s2) calc(var(--kv-key-w) + 0.55rem);
-  padding-left: calc(1rem + 0.6rem);
+  margin: 0 0 var(--s2) calc(var(--kv-key-w) + 0.28rem);
+  padding-left: calc(1rem + 0.35rem);
   border-left: 1px solid #e5e5e5;
 }
 
 .plan-block p.kv-row + ul,
 .plan-block p.kv-row + ol {
-  margin: 0 0 var(--s2) calc(var(--kv-key-w) + 0.55rem);
-  padding-left: calc(1rem + 0.6rem);
+  margin: 0 0 var(--s2) calc(var(--kv-key-w) + 0.28rem);
+  padding-left: calc(1rem + 0.35rem);
   border-left: 1px solid #e5e5e5;
 }
 
@@ -560,5 +560,64 @@ main > .section:first-child {
 
   .spot {
     width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  h1,
+  .hero-size-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    line-height: 1.02;
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 5.2vw, 1.55rem);
+  }
+
+  .eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-meta span,
+  .hero-names span {
+    font-size: 0.74rem;
+    padding: 0.28rem 0.7rem;
+  }
+
+  .day-tab,
+  .day-subtab {
+    font-size: 0.76rem;
+    padding: 0.26rem 0.56rem;
+  }
+
+  .panel-day-title {
+    font-size: 1.05rem;
+  }
+
+  .panel-day-title .day-subline {
+    font-size: 0.82em;
+  }
+
+  .plan-block h3 {
+    font-size: 1rem;
+  }
+
+  .plan-block p,
+  .plan-block li,
+  .panel dt,
+  .panel dd,
+  .travel-expense-sub,
+  .note-block summary,
+  .note-block li {
+    font-size: 0.9rem;
+  }
+
+  .total-budget-label {
+    font-size: 0.68rem;
+  }
+
+  .total-budget-value {
+    font-size: 1.1rem;
   }
 }
